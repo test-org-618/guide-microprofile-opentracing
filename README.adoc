@@ -81,7 +81,7 @@ to use MicroProfile OpenTracing. Feel free to give them a try before you proceed
 To try out the services, navigate to the `finish` directory and run the Maven `install` phase to build the services
 [role='command']
 ```
-mvn install
+mvn install babyyyy
 ```
 
 then, run the Maven `liberty:start-server` goal to start them in two Open Liberty servers:
