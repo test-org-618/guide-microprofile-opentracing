@@ -31,9 +31,9 @@ jobs:
     # Runs a single command using the runners shell
     - name: post
       run: |
-        echo $REPOSITORY_NAME
+       REPOSITORY_NAME = $(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}'
         curl \
           -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
           --request POST \
-          --data '{"event_type": "update", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'" }}' \
+          --data '{"event_type": "update", "client_payload": { "repository": $REPOSITORY_NAME }}' \
           https://api.github.com/repos/yasmin-aumeeruddy/action-test/dispatches
