@@ -436,7 +436,7 @@ mvn liberty:stop-server
 // Great work! You're done!
 // =================================================================================================
 
-== Great work! You're done!
+== Great work! You're done! testing
 
 You have just used MicroProfile OpenTracing in Open Liberty to customize how and which traces are delivered to Zipkin.
 
