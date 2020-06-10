@@ -240,7 +240,7 @@ include::finish/inventory/pom.xml[]
 // Enabling distributed tracing
 // =================================================================================================
 
-== Enabling distributed tracing test
+== Enabling distributed tracing
 
 The MicroProfile OpenTracing feature enables tracing of all JAX-RS methods by default.
 To further control and customize these traces, use the `@Traced` annotation to enable and disable
