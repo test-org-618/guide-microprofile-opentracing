@@ -31,6 +31,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: post
       run: |
+        echo $REPOSITORY_NAME
         curl \
           -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
           --request POST \
