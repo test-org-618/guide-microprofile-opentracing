@@ -20,7 +20,7 @@
 :page-seo-description: A getting started tutorial and an example on how to enable distributed tracing in Java microservices to easily trace request flows that span multiple resources by using MicroProfile OpenTracing and Zipkin tracing system.
 :source-highlighter: prettify
 :guide-author: Open Liberty
-= Enabling distributed tracing in microservices 
+= Enabling distributed tracing in microservices test
 
 [.hidden]
 NOTE: This repository contains the guide documentation source. To view the guide in published form, view it on the https://openliberty.io/guides/{projectid}.html[Open Liberty website].
