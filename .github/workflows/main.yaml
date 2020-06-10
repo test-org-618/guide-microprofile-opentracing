@@ -33,5 +33,5 @@ jobs:
         curl \
           -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
           --request POST \
-          --data '{"event_type": "update", "repo": "guide"}' \
+          --data '{"event_type": "update"}' \
           https://api.github.com/repos/yasmin-aumeeruddy/action-test/dispatches
