@@ -162,7 +162,7 @@ mvn liberty:stop-server
 // applications with Open Liberty and Docker.
 //
 //
-// === Running the services outside of Docker
+// === Running the services outside of Docker test
 //
 // Navigate to the `start` directory, then build the services and run them in Open Liberty:
 //
