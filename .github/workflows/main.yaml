@@ -32,7 +32,7 @@ jobs:
     - name: post
       run: |
        REPOSITORY_NAME=$(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}')
-       echo $REPOSITORY_NAME
+       echo ${{ REPOSITORY_NAME }}
         curl \
           -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
           --request POST \
