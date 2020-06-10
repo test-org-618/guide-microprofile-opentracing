@@ -31,10 +31,8 @@ jobs:
     # Runs a single command using the runners shell
     - name: post
       run: |
-       REPOSITORY_NAME=$(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}')
-       echo ${{ REPOSITORY_NAME }}
         curl \
           -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
           --request POST \
-          --data '{"event_type": "update", "client_payload": { "repository": $REPOSITORY_NAME }}' \
+          --data '{"event_type": "update", "client_payload": { "repository": guide-microprofile-opentracing }}' \
           https://api.github.com/repos/yasmin-aumeeruddy/action-test/dispatches
