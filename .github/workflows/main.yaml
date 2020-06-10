@@ -34,5 +34,5 @@ jobs:
         curl \
           -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
           --request POST \
-          --data '{"event_type": "guide-microprofile-opentracing"}' \
+          --data '{"event_type": "guide-microprofile-opentracing", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'" }}' \
           https://api.github.com/repos/yasmin-aumeeruddy/action-test/dispatches
