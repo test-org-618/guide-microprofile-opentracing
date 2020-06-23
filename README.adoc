@@ -36,7 +36,7 @@ Explore how to enable and customize tracing of JAX-RS and non-JAX-RS methods by 
 
 == What you'll learn
 
-Testing conversion 23/06/2020 14:00
+Testing conversion 23/06/2020 14:05
 
 You will learn how to enable automatic tracing for JAX-RS methods as well as create custom tracers
 for non-JAX-RS methods by using MicroProfile OpenTracing.
