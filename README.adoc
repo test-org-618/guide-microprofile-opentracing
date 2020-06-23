@@ -74,7 +74,7 @@ at the {zipkin-url}[{zipkin-url}^] URL.
 
 
 === Try what you'll build
-
+Testing
 The `finish` directory in the root directory of this guide contains two services that are configured
 to use MicroProfile OpenTracing. Feel free to give them a try before you proceed.
 
