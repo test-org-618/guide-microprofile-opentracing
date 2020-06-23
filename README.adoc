@@ -35,7 +35,6 @@ Explore how to enable and customize tracing of JAX-RS and non-JAX-RS methods by 
 
 
 == What you'll learn
-Testing conversion 
 
 You will learn how to enable automatic tracing for JAX-RS methods as well as create custom tracers
 for non-JAX-RS methods by using MicroProfile OpenTracing.
@@ -74,7 +73,7 @@ at the {zipkin-url}[{zipkin-url}^] URL.
 
 
 === Try what you'll build
-Testing
+
 The `finish` directory in the root directory of this guide contains two services that are configured
 to use MicroProfile OpenTracing. Feel free to give them a try before you proceed.
 
