@@ -26,6 +26,7 @@ jobs:
     - uses: actions/checkout@v2
       env:
          SUPER_SECRET: ${{ secrets.SuperSecret }}
+         REPO: ${{ GITHUB_REPOSITORY_NAME }}
 
 
     # Runs a single command using the runners shell
@@ -41,4 +42,4 @@ jobs:
          cd ..
          git clone https://github.com/yasmin-aumeeruddy/action-test.git
          cd action-test
-         java GuideConverter $GITHUB_REPOSITORY_NAME
+         java GuideConverter $REPO
