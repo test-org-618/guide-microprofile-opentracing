@@ -42,3 +42,4 @@ jobs:
          git clone https://github.com/yasmin-aumeeruddy/action-test.git
          cd action-test
          java GuideConverter guide-microprofile-opentracing
+         git checkout -b actions-mp-ot
