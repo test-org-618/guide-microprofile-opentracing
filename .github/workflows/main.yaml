@@ -46,7 +46,6 @@ jobs:
          javac GuideConverter.java
          java GuideConverter guide-microprofile-opentracing
          rm -f temp.adoc
-         cat instructions/guide-microprofile-opentracing/README.md
          git checkout -b actions-mp-ot
          git config --global user.email "action@example.com"
          git config --global user.name "action"
