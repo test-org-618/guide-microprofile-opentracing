@@ -38,5 +38,7 @@ jobs:
          # https://api.github.com/repos/yasmin-aumeeruddy/action-test/dispatches
     - name: post
       run: |
-         git clone https://github.com/yasmin-aumeeruddy/action-test.git ../
-         java ../action-test/GuideConverter.java $GITHUB_REPOSITORY_NAME
+         cd ..
+         git clone https://github.com/yasmin-aumeeruddy/action-test.git
+         cd action-test
+         java GuideConverter.java $GITHUB_REPOSITORY_NAME
