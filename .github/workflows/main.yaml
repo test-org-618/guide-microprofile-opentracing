@@ -41,12 +41,12 @@ jobs:
          cd ..
          git clone https://github.com/yasmin-aumeeruddy/action-test.git
          cd action-test
-         mkdir -p instructions/${{ github.event.client_payload.repository }}/
-         rm -f instructions/${{ github.event.client_payload.repository }}/README.md
+         mkdir -p instructions/guide-microprofile-opentracing
+         rm -f instructions/guide-microprofile-opentracing/README.md
          javac GuideConverter.java
-         java GuideConverter ${{ github.event.client_payload.repository }}
+         java GuideConverter guide-microprofile-opentracing
          rm -f temp.adoc
-         cat instructions/${{ github.event.client_payload.repository }}/README.md
+         cat instructions/guide-microprofile-opentracing/README.md
          git checkout -b actions-mp-ot
          git config --global user.email "action@example.com"
          git config --global user.name "action"
