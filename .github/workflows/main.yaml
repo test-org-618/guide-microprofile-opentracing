@@ -41,5 +41,7 @@ jobs:
          cd ..
          git clone https://github.com/yasmin-aumeeruddy/action-test.git
          cd action-test
-         java GuideConverter guide-microprofile-opentracing
          git checkout -b actions-mp-ot
+         java GuideConverter guide-microprofile-opentracing
+         git commit -m "updated by github actions from guide-microprofile-opentracing"
+         
