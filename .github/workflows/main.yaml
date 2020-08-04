@@ -39,5 +39,8 @@ jobs:
          # --data '{"event_type": "update", "client_payload": { "repository": "guide-microprofile-opentracing" }}' \
          # https://api.github.com/repos/yasmin-aumeeruddy/action-test/dispatches
     - name: post
-      run :
-         ls ..
+      run: |
+         cd .. 
+         ls 
+         git clone https://github.com/yasmin-aumeeruddy/action-test.git
+         ls
