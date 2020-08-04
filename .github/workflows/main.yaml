@@ -39,7 +39,7 @@ jobs:
     - name: post
       run: |
          cd ..
-         git clone git@github.com:yasmin-aumeeruddy/action-test.git
+         git clone https://github.com:yasmin-aumeeruddy/action-test.git
          cd action-test
          mkdir -p instructions/guide-microprofile-opentracing
          rm -f instructions/guide-microprofile-opentracing/README.md
