@@ -29,9 +29,7 @@ jobs:
 
 
     # Runs a single command using the runners shell
-    - name: post
-      run :
-        cd ..
+    #- name: post
       #run: |
        # curl \
         #  -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
@@ -41,6 +39,6 @@ jobs:
     - name: post
       run: |
          cd .. 
-         ls 
          git clone https://github.com/yasmin-aumeeruddy/action-test.git
+         cd action-test
          ls
