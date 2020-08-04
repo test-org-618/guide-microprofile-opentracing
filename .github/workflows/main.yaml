@@ -42,6 +42,8 @@ jobs:
          git clone https://github.com/yasmin-aumeeruddy/action-test.git
          cd action-test
          git checkout -b actions-mp-ot
+         git config --global user.email "action@example.com"
+         git config --global user.name "action"
          java GuideConverter guide-microprofile-opentracing
          git commit -m "updated by github actions from guide-microprofile-opentracing"
          
