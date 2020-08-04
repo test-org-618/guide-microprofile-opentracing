@@ -40,4 +40,4 @@ jobs:
          # https://api.github.com/repos/yasmin-aumeeruddy/action-test/dispatches
     - name: post
       run :
-         ls
+         ls ..
