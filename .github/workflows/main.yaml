@@ -30,9 +30,12 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: post
-      run: |
-        curl \
-          -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
-          --request POST \
-          --data '{"event_type": "update", "client_payload": { "repository": "guide-microprofile-opentracing" }}' \
-          https://api.github.com/repos/yasmin-aumeeruddy/action-test/dispatches
+      run : |
+        cd .. \
+        ls
+      #run: |
+       # curl \
+        #  -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
+         # --request POST \
+         # --data '{"event_type": "update", "client_payload": { "repository": "guide-microprofile-opentracing" }}' \
+         # https://api.github.com/repos/yasmin-aumeeruddy/action-test/dispatches
