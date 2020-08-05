@@ -39,7 +39,7 @@ jobs:
     - name: post
       run: |
          cd ..
-         git clone https://github.com:yasmin-aumeeruddy/action-test
+         git clone https://github.com/yasmin-aumeeruddy/action-test
          cd action-test
          mkdir -p instructions/guide-microprofile-opentracing
          rm -f instructions/guide-microprofile-opentracing/README.md
@@ -52,5 +52,5 @@ jobs:
          git add .
          java GuideConverter guide-microprofile-opentracing
          git commit -m "updated by github actions from guide-microprofile-opentracing"
-         git push -u origin actions-mp-ot
+         git push --quiet origin actions-mp-ot
          
