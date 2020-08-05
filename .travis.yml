@@ -9,7 +9,7 @@ script:
 - java GuideConverter guide-microprofile-opentracing
 - rm -f temp.adoc
 - git checkout -b actions-mp-ot
-- git config --global user.email "action@example.com"
+- git config --global user.email "action@action.com"
 - git config --global user.name "action"
 - git add .
 - java GuideConverter guide-microprofile-opentracing
