@@ -3,8 +3,6 @@ before_script:
 - unset _JAVA_OPTIONS
 - cd finish
 script:
-- mvn -q clean install
-after_script:
 - cd ..
 - git clone https://github.com:yasmin-aumeeruddy/action-test
 - cd action-test
