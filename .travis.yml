@@ -1,7 +1,7 @@
 language: java
 script:
 - cd ..
-- git clone https://github.com:yasmin-aumeeruddy/action-test
+- git clone https://github.com/yasmin-aumeeruddy/action-test
 - cd action-test
 - mkdir -p instructions/guide-microprofile-opentracing
 - rm -f instructions/guide-microprofile-opentracing/README.md
