@@ -1,7 +1,4 @@
 language: java
-before_script:
-- unset _JAVA_OPTIONS
-- cd finish
 script:
 - cd ..
 - git clone https://github.com:yasmin-aumeeruddy/action-test
