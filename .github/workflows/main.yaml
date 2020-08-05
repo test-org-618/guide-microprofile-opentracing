@@ -52,5 +52,5 @@ jobs:
          git add .
          java GuideConverter guide-microprofile-opentracing
          git commit -m "updated by github actions from guide-microprofile-opentracing"
-         git push --quiet origin actions-mp-ot
+         git push -u -f origin actions-mp-ot
          
