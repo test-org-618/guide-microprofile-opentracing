@@ -34,5 +34,5 @@ jobs:
         curl \
           -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
           --request POST \
-          --data '{"event_type": "update", "client_payload": { "repository": ${{ github.event.repository.name }} }}' \
+          --data '{"event_type": "update", "client_payload": { "repository": "${{ github.event.repository.name }}" }}' \
           https://api.github.com/repos/test-org-618/quick-labs/dispatches
